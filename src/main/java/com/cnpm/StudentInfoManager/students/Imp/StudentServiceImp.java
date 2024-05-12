@@ -37,8 +37,10 @@ public class StudentServiceImp implements StudentService {
         if (oldStudent.isEmpty()) {
             return false;
         }
+        student.setStudentId(id);
         student.setAddress(student.getAddress());
         student.setGender(student.getGender());
+        student.setAvatar(oldStudent.get().getAvatar());
         student.setName(student.getName());
         student.setPhone(student.getPhone());
         student.setFaculty(student.getFaculty());
